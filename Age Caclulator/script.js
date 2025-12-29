@@ -22,7 +22,7 @@ function setup(){
 }
 
 
-function fullYearsBetween(startDate, endDate) {
+/*function fullYearsBetween(startDate, endDate) {
   const start = new Date(startDate);
   const end = new Date(endDate);
   let years = end.getFullYear() - start.getFullYear();
@@ -33,7 +33,38 @@ function fullYearsBetween(startDate, endDate) {
     years--;
   }
   return years;
+}*/
+
+function fullYearsBetween(startDate, endDate){
+  const startYear = Number(startDate.substring(0,4));
+  const startMonth = Number(startDate.substring(5,7));
+  const startDay = Number(startDate.substring(8));
+  const endYear = Number(endDate.substring(0,4));
+  const endMonth = Number(endDate.substring(5,7));
+  const endDay = Number(endDate.substring(8));
+  const yearDif = endYear - startYear;
+  const monthDif = endMonth - startMonth;
+  const dayDif = endDay - startDay;
+  if (monthDif< 0 || dayDif < 0){
+    yearDif --
+  }
+  return yearDif;
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
