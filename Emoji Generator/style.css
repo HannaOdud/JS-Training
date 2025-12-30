@@ -1,0 +1,34 @@
+body{
+    background: linear-gradient(135deg,
+                    #f4fb8f, #ff6b6b);
+    height: 100vh;
+    margin: 0;
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 50px  auto;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+h1{
+    color: #00a136;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#buttonContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+button{
+    margin: 5px 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border:unset;
+    background-color: #4e6bff;
+    color: white;
+}
+#random{
+    width:200px;
+}
