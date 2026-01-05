@@ -1,0 +1,29 @@
+main{
+    background-color: #082c6c;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    width: 700px;
+    border: 1px solid white;
+    padding-bottom: 100px;
+}
+#results{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 600px;
+    margin: 0 auto;
+}
+button{
+    background-color: green;
+    border-color:green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    
+    cursor: pointer;
+}
